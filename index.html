@@ -1,14 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Toboolist</title>
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-
-</body>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Toboolist header -->
+    <header class="toboolist-header">
+      <a href="#" class="toboolist-logo flex-center w-fit">
+        <img src="./img/Logo.png" alt="boolean-logo" />
+        <h1 class="title">Toboolist</h1>
+      </a>
+    </header>
+    <!-- Tobolist container -->
+    <main class="container">
+      <div class="toboolist-actions-btns flex-start">
+        <button class="bg-primary bounce">Add Task</button>
+        <button class="btn-disabled" disabled>Add Section</button>
+      </div>
+      <!-- Tobolist -->
+      <div class="toboolist">
+        <!-- New tasks -->
+        <article class="new tasks">
+          <button class="toggle-task-btn flex-center">
+            <i class="bx bxs-down-arrow"></i>
+            <strong>New Task</strong>
+          </button>
+          <ul>
+            <li class="flex-start">
+              <i class="bx bxs-check-circle"></i>
+              <p class="task-content">Quarterly Newsletter</p>
+              <div class="toboo-type editorial bg-primary">Editorial</div>
+            </li>
+          </ul>
+        </article>
+        <!-- Today tasks -->
+        <article class="today tasks">
+          <button class="toggle-task-btn flex-center">
+            <i class="bx bxs-down-arrow"></i>
+            <strong>Today Task</strong>
+          </button>
+          <ul>
+            <li class="flex-start">
+              <i class="bx bxs-check-circle"></i>
+              <p class="task-content">Quarterly Newsletter</p>
+              <div class="toboo-type editorial">Editorial</div>
+            </li>
+            <li class="flex-start">
+              <i class="bx bxs-check-circle"></i>
+              <p class="task-content">Quarterly Newsletter</p>
+              <div class="toboo-type goals">Q1 Goals</div>
+            </li>
+            <li class="flex-start">
+              <i class="bx bxs-x-circle"></i>
+              <p class="task-content">Quarterly Newsletter</p>
+              <div class="toboo-type recruiting">Recruiting</div>
+            </li>
+            <li class="flex-start">
+              <i class="bx bxs-check-circle"></i>
+              <p class="task-content">Quarterly Newsletter</p>
+              <div class="toboo-type mobile">Mobile</div>
+            </li>
+          </ul>
+        </article>
+        <!-- Upcoming tasks -->
+        <article class="upcoming tasks">
+          <button class="toggle-task-btn flex-center">
+            <i class="bx bxs-down-arrow"></i>
+            <strong>Upcoming Task</strong>
+          </button>
+          <ul>
+            <li class="flex-start">
+              <i class="bx bxs-x-circle"></i>
+              <p class="task-content">Quarterly Newsletter</p>
+              <div class="toboo-type hidden">Editorial</div>
+            </li>
+            <li class="flex-start">
+              <i class="bx bxs-x-circle"></i>
+              <p class="task-content">Quarterly Newsletter</p>
+              <div class="toboo-type website">Website</div>
+            </li>
+            <li class="flex-start">
+              <i class="bx bxs-x-circle"></i>
+              <p class="task-content">Quarterly Newsletter</p>
+              <div class="toboo-type sales">Sales</div>
+            </li>
+            <li class="flex-start">
+              <i class="bx bxs-x-circle"></i>
+              <p class="task-content">Quarterly Newsletter</p>
+              <div class="toboo-type editorial bg-primary">Editorial</div>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </main>
+  </body>
 </html>
